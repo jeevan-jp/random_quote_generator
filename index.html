@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>R Q Generator</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+	<meta name="viewport" content="width=device-width, user-scalable=no" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet">
+	<script src="app.js"></script>
+	<style>
+		body,html{
+			box-sizing: border-box;
+			background: linear-gradient(to right bottom, #845336, #2f602a);
+			height: 100%;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+
+		#header{
+			font-family: 'Cookie', cursive;
+			text-align: center;
+
+			color: #ff006e;
+			font-size: 60px;
+		}
+
+		#para{
+			font-family: 'Cookie', cursive;
+			font-size: 20px;
+			color: yellow;
+			text-align: justify;
+			box-sizing: border-box;
+			margin: 0 20% 0 20%;
+		}
+
+		#content{
+			display: block;
+    		margin: auto;
+    		width: 50%;
+		}
+
+		.submit{
+			margin-top: 30px;
+			background: #998230;
+			color: yellow;
+		}
+
+		.submit:hover{
+			background: #ff7e47;
+		}
+
+	</style>
+</head>
+<body>
+
+	<div class="container">
+	 <div class="row">
+	  <div id="header">
+	  	<center><b>Random Quote Machine</b></center>
+	  </div>
+	  <p id="para">This random quote generator is showing famous sanskrit slokas and contains knowledge that every human being should be familiar of. If we follow these simple slokas in our lives, most of the global problems may end very easily and very soon.</p>
+	 </div>
+
+	  <div class="row">
+	  		<center><img  src="https://s4.scoopwhoop.com/anj/shlokas/28006421.jpg" id="content"></center>
+	  </div>
+		
+	  <div class="row">
+			<center>
+
+				<a href="https://twitter.com/intent/tweet?hashtags=quotes&text=Sanskrit quote link: https://s4.scoopwhoop.com/anj/shlokas/28006421.jpg" target="_blank" id="link1"><button class="btn btn-default btn-lg submit"><i class="fa fa-twitter" style="color: #1da1f2"></i> Tweet</button></a>
+
+				<button class="btn btn-default btn-lg submit" onclick="generate()">New Quote</button>
+											
+			</center>
+	  </div>
+	</div>
+</body>
+</html>
